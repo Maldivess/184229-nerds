@@ -5,35 +5,170 @@
     <title>Дизайн студия «Нёрдс»</title>
   </head>
   <body>
+
+
     <header class="main-header">
-      <div class="logo">
-        <img src="img/index-logo.png" width="240" height="120" alt="«Нёрдс»">
-      </div>
       <div class="container">
-        <nav class="main-navigation">
-          <ul>
-            <li>
-              <a href="#">Студия</a>
-            </li>
-            <li>
-              <a href="#">Клиенты</a>
-            </li>
-            <li>
-              <a href="#">Магазин</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="user-block">
-          <a class="cart" href="#">Корзина</a>
+        <div class="logo">
+          <img src="img/index-logo.png" width="240" height="120" alt="«Нёрдс»">
+        </div>
+        <div class="menu">
+          <nav class="main-navigation">
+            <ul>
+              <li>
+                <a href="index.html">Студия</a>
+              </li>
+              <li>
+                <a href="#">Клиенты</a>
+              </li>
+              <li>
+                <a href="#">Магазин</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="user-block">
+            <a class="cart" href="#">Корзина</a>
+          </div>
         </div>
         <div  class="shop-inner">
           <h1>Добро пожаловать в магазин готовых макетов</h1>
         </div>
       </div>
     </header>
+
+
+    <main>
+      <div class="container-main">
+        <section class="filters">
+          <form action="/">
+            <div class="filter-1">
+              <div class="filter-title">Стоимость:</div>
+
+              <!-- Мне непонятно как разметить этот участок, нужна твоя помощь -->
+
+
+
+
+            </div>
+            <div class="filter-2">
+              <div class="filter-title">Сетка:</div>
+              <ul>
+                <li>
+                  <input type="radio" id="adapted" name="select" checked>
+                  <label for="adapted">Адаптивная</label>
+                </li>
+                <li>
+                  <input type="radio" id="fixed" name="select">
+                  <label for="fixed">Фиксированная</label>
+                </li>
+                <li>
+                  <input type="radio" id="rubber" name="select">
+                  <label for="rubber">Резиновая</label>
+                </li>
+              </ul>
+            </div>
+            <div class="filter-3">
+              <div class="filter-title">Особенности:</div>
+              <ul>
+                <li>
+                  <input type="checkbox" id="slider" checked>
+                  <label for="slider">Слайдер</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="advantages">
+                  <label for="advantages">Блок преимуществ</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="news" checked>
+                  <label for="news">Новости</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="gallery">
+                  <label for="gallery">Галлерея</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="cart">
+                  <label for="cart">Корзина</label>
+                </li>
+              </ul>
+            </div>
+            <button type="submit" class="btn">Показать</button>
+          </form>
+        </section>
+        <section class="catalog">
+          <div class="catalog-select">
+            <span>Сортировать:</span>
+            <ul>
+              <li><a href="#">по цене</a></li>
+              <li><a href="#">по типу</a></li>
+              <li><a href="#">по функционалу</a></li>
+            </ul>
+            <a class="icon-down" href="#"></a>
+            <a class="icon-up" href="#"></a>
+          </div>
+          <div class="catalog-item-container">
+            <div class="catalog-item">
+              <img src="img/item1.jpg" alt="Aviator" width="200" height="225">
+            </div>
+            <div class="catalog-item">
+              <img src="img/item2.jpg" alt="Sunset" width="200" height="225">
+              <div class="hover">
+                <h2>Sunset</h2>
+                <p>Интернет-магазин с личным кабинетом</p>
+                <a class="buy-btn" href="#">10000 Р.</a>
+              </div>
+            </div>
+            <div class="catalog-item">
+              <img src="img/item3.jpg" alt="Forte" width="200" height="225">
+            </div>
+            <div class="catalog-item">
+              <img src="img/item4.jpg" alt="Modern" width="200" height="225">
+            </div>
+            <div class="catalog-item">
+              <img src="img/item5.jpg" alt="Avenue" width="200" height="225">
+            </div>
+            <div class="catalog-item">
+              <img src="img/item6.jpg" alt="Dovetail" width="200" height="225">
+            </div>
+          </div>
+          <div class="page-link">
+            <span class="page-active">1</span>
+            <a href="#" class="page-2">2</a>
+            <a href="#" class="page-3">3</a>
+            <a href="#" class="next">Следующая</a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+
+    <div class="map">
+      <img src="img/map.png" width="1100" height="350" alt="Map">
+      <div class="map-container">
+        <div class="contacts">
+          <h2 class="contacts-title">Nerds design studio</h2>
+          <p>191186, Санкт-Петербург ул.Б.Конюшенная, д.19/8</p>
+          <p>тел.+7(812)275-75-75</p>
+          <a class="contacts-btn" href="#">Напишите нам</a>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="main-footer">
+      <div class="social">
+        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+      </div>
+      <div class="footer-friends">
+        <h2 class="footer-friends-title">Давайте дружить, это выгодно!</h2>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </footer>
 
 
   </body>
