@@ -41,19 +41,28 @@
 
 
     <main>
-      <div class="container-main">
+      <div class="container">
         <section class="filters">
           <form action="/">
-            <div class="filter-1">
+            <div class="filter">
               <div class="filter-title">Стоимость:</div>
-
-              <!-- Мне непонятно как разметить этот участок, нужна твоя помощь -->
-
-
-
-
+              <div class="cost-filter">
+                <div class="cost-filter-top">
+                  <div class="cost-filter-range"></div>
+                </div>
+                <div class="cost-filter-bottom">
+                  <div class="cost-filter-input">
+                    <label for="">От</label>
+                    <input type="text" value="0" />
+                  </div>
+                  <div class="cost-filter-input">
+                    <label for="">До</label>
+                    <input type="text" value="3000" />
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="filter-2">
+            <div class="filter">
               <div class="filter-title">Сетка:</div>
               <ul>
                 <li>
@@ -70,7 +79,7 @@
                 </li>
               </ul>
             </div>
-            <div class="filter-3">
+            <div class="filter">
               <div class="filter-title">Особенности:</div>
               <ul>
                 <li>
@@ -112,26 +121,51 @@
           <div class="catalog-item-container">
             <div class="catalog-item">
               <img src="img/item1.jpg" alt="Aviator" width="200" height="225">
+              <div class="hover">
+                <h2>Aviator</h2>
+                <p>Одностраничный макет с авторским дизайном</p>
+                <a class="btn btn-red" href="#">8000 Р.</a>
+              </div>
             </div>
             <div class="catalog-item">
               <img src="img/item2.jpg" alt="Sunset" width="200" height="225">
               <div class="hover">
                 <h2>Sunset</h2>
                 <p>Интернет-магазин с личным кабинетом</p>
-                <a class="buy-btn" href="#">10000 Р.</a>
+                <a class="btn btn-red" href="#">10000 Р.</a>
               </div>
             </div>
             <div class="catalog-item">
               <img src="img/item3.jpg" alt="Forte" width="200" height="225">
+              <div class="hover">
+                <h2>Forte</h2>
+                <p>Отличный макет для личного блога</p>
+                <a class="btn btn-red" href="#">5000 Р.</a>
+              </div>
             </div>
             <div class="catalog-item">
               <img src="img/item4.jpg" alt="Modern" width="200" height="225">
+              <div class="hover">
+                <h2>Modern organic thai</h2>
+                <p>Сайт для ресторана быстрого питания</p>
+                <a class="btn btn-red" href="#">11000 Р.</a>
+              </div>
             </div>
             <div class="catalog-item">
               <img src="img/item5.jpg" alt="Avenue" width="200" height="225">
+              <div class="hover">
+                <h2>Avenue</h2>
+                <p>Макет для блога о путешествия</p>
+                <a class="btn btn-red" href="#">8000 Р.</a>
+              </div>
             </div>
             <div class="catalog-item">
               <img src="img/item6.jpg" alt="Dovetail" width="200" height="225">
+              <div class="hover">
+                <h2>Dovetail</h2>
+                <p>Интернет-магазин с галереей товаров</p>
+                <a class="btn btn-red" href="#">14000 Р.</a>
+              </div>
             </div>
           </div>
           <div class="page-link">
@@ -152,7 +186,7 @@
           <h2 class="contacts-title">Nerds design studio</h2>
           <p>191186, Санкт-Петербург ул.Б.Конюшенная, д.19/8</p>
           <p>тел.+7(812)275-75-75</p>
-          <a class="contacts-btn" href="#">Напишите нам</a>
+          <a class="btn btn-red" href="#">Напишите нам</a>
         </div>
       </div>
     </div>
