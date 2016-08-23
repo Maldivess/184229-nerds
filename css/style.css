@@ -32,7 +32,8 @@ body {
 .menu {
   float: right;
   width: 570px;
-  padding: 40px 0;
+  margin: 0;
+  padding: 20px 0;
 }
 
 .main-navigation {
@@ -55,7 +56,6 @@ body {
   display: inline-block;
   margin-right: 45px;
 }
-
 
 .slide {
   display: inline-block;
@@ -125,7 +125,7 @@ body {
   margin-bottom: 60px;
 }
 
-.map-container {
+.map-contacts {
   background: white;
   width: 250px;
   height: 240px;
@@ -142,6 +142,55 @@ body {
 .footer-friends {
   float: right;
 }
+
+.shop-inner {
+  display: inline-block;
+  width: 680px;
+}
+
+.filters {
+  float: left;
+
+}
+
+.catalog {
+  float: right;
+  width: 560px;
+  margin-bottom: 80px;
+
+}
+
+.catalog-select ul {
+  float: left;
+  list-style: none;
+
+}
+
+.catalog-select li {
+  display: inline-block;
+  margin-right: 35px;
+}
+
+.catalog-items {
+  width: 560px;
+}
+
+.catalog-item {
+  width: 240px;
+  margin-bottom: 80px;
+
+}
+
+.catalog-item:nth-child(2n+1){
+  float: left;
+}
+
+.catalog-item:nth-child(2n){
+  float: right;
+}
+
+
+
 
 
 
