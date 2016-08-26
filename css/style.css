@@ -255,7 +255,8 @@ body {
 }
 
 .features {
-  margin-bottom: 80px;
+ padding-bottom: 80px;
+ border-bottom: 2px solid #f4f4f4;
 }
 
 
@@ -263,16 +264,78 @@ body {
   float: left;
   width: 240px;
   margin-right: 80px;
+  font-size: 15px;
+  color: #283136;
 }
 
 .features-item:last-child {
   margin-right: 0px;
 }
 
-.features-item h3 {
-  margin-top: 13px;
+.features-item-image {
+  width: 240px;
+  height: 124px;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.features-name {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  color: #000000;
   text-transform: uppercase;
 }
+
+.features-item p {
+  margin-top: 10px;
+  line-height: 22px;
+  font-size: 15px;
+  color: #283136;
+}
+
+.btn-red {
+  display: block;
+  width: 140px;
+  margin-top: 25px;
+  padding: 5px 0;
+  font-size: 12px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #fb565a;
+  border-radius: 3px;
+}
+
+.btn-green {
+  display: block;
+  width: 140px;
+  margin-top: 25px;
+  padding: 5px 0;
+  font-size: 12px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #00ca74;
+  border-radius: 3px;
+}
+
+.btn-yellow {
+  display: block;
+  width: 140px;
+  margin-top: 25px;
+  padding: 5px 0;
+  font-size: 12px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #efc84a;
+  border-radius: 3px;
+}
+
 
 .about-us {
   margin-bottom: 76px;
