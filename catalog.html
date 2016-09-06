@@ -23,170 +23,172 @@
             </ul>
           </nav>
           <div class="basket">
-					  <a class="basket-link" href="#">
-						  <span class="icon-basket"></span>
+		    <a class="basket-link" href="#">
+		      <span class="icon-basket"></span>
               <span class="basket-text">Корзина</span>
-						</a>
+            </a>
           </div>
         </div>
 	  </div>
 	  <div  class="shop-inner container">
-	    Добро пожаловать в магазин готовых макетов
+	    <p>Добро пожаловать в магазин готовых макетов</p>
 	  </div>
     </header>
 
-    <main class="catalog container clearfix">
-      <section class="filters">
-        <form action="#" method="post" name="form-filters">
-          <div class="filter">
-            <div class="filter-title">Стоимость:</div>
-            <div class="filter-price">
-              <div class="filter-price-scale">
-                <div class="filter-price-bar"></div>
+    <main class="catalog">
+      <div class="clearfix container">
+        <section class="filters">
+          <form action="#" method="post" name="form-filters">
+            <div class="filter">
+              <div class="filter-title">Стоимость:</div>
+              <div class="filter-price">
+                <div class="filter-price-scale">
+                  <div class="filter-price-bar"></div>
+                </div>
+                <div class="thumb thumb-left"></div>
+                <div class="thumb thumb-right"></div>
               </div>
-              <div class="thumb thumb-left"></div>
-              <div class="thumb thumb-right"></div>
+              <div class="price-controls range-title">
+                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+              </div>
             </div>
-            <div class="form-inp">
-              <label for="from">От</label>
-              <input type="text" id="from" name="from" value="0">
-              <label for="before">До</label>
-              <input type="text" id="before" name="before" value="1500">
+            <div class="filter-radio">
+              <div class="filter-title">Сетка:</div>
+              <ul>
+                <li>
+                  <input type="radio" name="radio-button" id="adaptive" checked>
+                  <label for="adaptive" class="filter-label filter-label-radio">Адаптивная</label>
+                </li>
+                <li>
+                  <input type="radio" name="radio-button" id="fixed">
+                  <label for="fixed" class="filter-label filter-label-radio">Фиксированная</label>
+                </li>
+                <li>
+                  <input type="radio" name="radio-button" id="rubber">
+                  <label for="rubber" class="filter-label filter-label-radio">Резиновая</label>
+                </li>
+              </ul>
+            </div>
+            <div class="filter-checkbox">
+              <div class="filter-title">Особенности:</div>
+              <ul>
+                <li>
+                  <input type="checkbox" name="slider" id="slider" checked>
+                  <label for="slider" class="filter-label filter-label-checkbox">Слайдер</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="block" id="block">
+                  <label for="block" class="filter-label filter-label-checkbox">Блок преимуществ</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="news" id="news" checked>
+                  <label for="news" class="filter-label filter-label-checkbox">Новости</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="gallery" id="gallery">
+                  <label for="gallery" class="filter-label filter-label-checkbox">Галерея</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="basket" id="basket">
+                  <label for="basket" class="filter-label filter-label-checkbox">Корзина</label>
+                </li>
+              </ul>
+            </div>
+            <input type="submit" name="filters-submit" class="filter-btn" value="Показать">
+          </form>
+        </section>
+        <section class="layouts">
+          <div class="layouts-controls clearfix">
+            <ul class="layouts-controls-link">
+              <li>Сортировать:</li>
+              <li><a href="#">По цене</a></li>
+              <li><a href="#">По типу</a></li>
+              <li><a href="#">По функционалу</a></li>
+            </ul>
+            <div class="layouts-controls-triangle">
+              <a href="#" class="layouts-controls-triangle-active">▼</a>
+              <a href="#">▲</a>
             </div>
           </div>
-          <div class="filter-radio">
-            <div class="filter-title">Сетка:</div>
+          <div class="catalog-items clearfix">
+            <div class="catalog-item">
+              <div class="catalog-item-top">
+                <i></i><i></i><i></i>
+              </div>
+              <img src="img/aviator.jpg" alt="Aviator" width="240" height="240">
+              <div class="hover-text">
+                <h2>Aviator</h2>
+                <p>Одностраничный макет с авторским дизайном</p>
+                <a class="btn-red-hover" href="#">8000 Р.</a>
+              </div>
+            </div>
+            <div class="catalog-item">
+              <div class="catalog-item-top">
+                <i></i><i></i><i></i>
+              </div>
+              <img src="img/sunset.jpg" alt="Sunset" width="240" height="240">
+              <div class="hover-text">
+                <h2>Sunset</h2>
+                <p>Интернет-магазин с личным кабинетом</p>
+                <a class="btn-red-hover" href="#">10000 Р.</a>
+              </div>
+            </div>
+            <div class="catalog-item">
+              <div class="catalog-item-top">
+                <i></i><i></i><i></i>
+              </div>
+              <img src="img/forte.jpg" alt="Forte" width="240" height="240">
+              <div class="hover-text">
+                <h2>Forte</h2>
+                <p>Отличный макет для личного блога</p>
+                <a class="btn-red-hover" href="#">5000 Р.</a>
+              </div>
+            </div>
+            <div class="catalog-item">
+              <div class="catalog-item-top">
+                <i></i><i></i><i></i>
+              </div>
+              <img src="img/modern.jpg" alt="Modern" width="240" height="240">
+              <div class="hover-text">
+                <h2>Modern organic thai</h2>
+                <p>Сайт для ресторана быстрого питания</p>
+                <a class="btn-red-hover" href="#">11000 Р.</a>
+              </div>
+            </div>
+            <div class="catalog-item">
+              <div class="catalog-item-top">
+                <i></i><i></i><i></i>
+              </div>
+              <img src="img/avenue.jpg" alt="Avenue" width="240" height="240">
+              <div class="hover-text">
+                <h2>Avenue</h2>
+                <p>Макет для блога о путешествия</p>
+                <a class="btn-red-hover" href="#">8000 Р.</a>
+              </div>
+            </div>
+            <div class="catalog-item">
+              <div class="catalog-item-top">
+                <i></i><i></i><i></i>
+              </div>
+              <img src="img/dovetail.jpg" alt="Dovetail" width="240" height="240">
+              <div class="hover-text">
+                <h2>Dovetail</h2>
+                <p>Интернет-магазин с галереей товаров</p>
+                <a class="btn-red-hover" href="#">14000 Р.</a>
+              </div>
+            </div>
+          </div>
+          <div class="page clearfix">
             <ul>
-              <li>
-                <input type="radio" name="radio-button" id="adaptive" checked>
-                <label for="adaptive" class="filter-label filter-label-radio">Адаптивная</label>
-              </li>
-              <li>
-                <input type="radio" name="radio-button" id="fixed">
-                <label for="fixed" class="filter-label filter-label-radio">Фиксированная</label>
-              </li>
-              <li>
-                <input type="radio" name="radio-button" id="rubber">
-                <label for="rubber" class="filter-label filter-label-radio">Резиновая</label>
-              </li>
+              <li><a href="#" class="page-link active-link">1</a></li>
+              <li><a href="#" class="page-link">2</a></li>
+              <li><a href="#" class="page-link">3</a></li>
+              <li><a href="#" class="page-link next">Следующая</a></li>
             </ul>
           </div>
-          <div class="filter-checkbox">
-            <div class="filter-title">Особенности:</div>
-            <ul>
-              <li>
-                <input type="checkbox" name="slider" id="slider" checked>
-                <label for="slider" class="filter-label filter-label-checkbox">Слайдер</label>
-              </li>
-              <li>
-                <input type="checkbox" name="block" id="block">
-                <label for="block" class="filter-label filter-label-checkbox">Блок преимуществ</label>
-              </li>
-              <li>
-                <input type="checkbox" name="news" id="news" checked>
-                <label for="news" class="filter-label filter-label-checkbox">Новости</label>
-              </li>
-              <li>
-                <input type="checkbox" name="gallery" id="gallery">
-                <label for="gallery" class="filter-label filter-label-checkbox">Галерея</label>
-              </li>
-              <li>
-                <input type="checkbox" name="basket" id="basket">
-                <label for="basket" class="filter-label filter-label-checkbox">Корзина</label>
-              </li>
-            </ul>
-          </div>
-          <input type="submit" name="filters-submit" class="filter-btn" value="Показать">
-        </form>
-      </section>
-      <section class="layouts">
-        <div class="layouts-controls clearfix">
-          <ul class="layouts-controls-link">
-            <li>Сортировать:</li>
-            <li><a href="#">По цене</a></li>
-            <li><a href="#">По типу</a></li>
-            <li><a href="#">По функционалу</a></li>
-          </ul>
-          <div class="layouts-controls-triangle">
-            <a href="#" class="layouts-controls-triangle-active">▼</a>
-            <a href="#">▲</a>
-          </div>
-        </div>
-        <div class="catalog-items clearfix">
-          <div class="catalog-item">
-            <div class="catalog-item-top">
-              <i></i><i></i><i></i>
-            </div>
-            <img src="img/aviator.jpg" alt="Aviator" width="240" height="240">
-            <div class="hover-text">
-              <h2>Aviator</h2>
-              <p>Одностраничный макет с авторским дизайном</p>
-              <a class="btn-red-hover" href="#">8000 Р.</a>
-            </div>
-          </div>
-          <div class="catalog-item">
-            <div class="catalog-item-top">
-              <i></i><i></i><i></i>
-            </div>
-            <img src="img/sunset.jpg" alt="Sunset" width="240" height="240">
-            <div class="hover-text">
-              <h2>Sunset</h2>
-              <p>Интернет-магазин с личным кабинетом</p>
-              <a class="btn-red-hover" href="#">10000 Р.</a>
-            </div>
-          </div>
-          <div class="catalog-item">
-            <div class="catalog-item-top">
-              <i></i><i></i><i></i>
-            </div>
-            <img src="img/forte.jpg" alt="Forte" width="240" height="240">
-            <div class="hover-text">
-              <h2>Forte</h2>
-              <p>Отличный макет для личного блога</p>
-              <a class="btn-red-hover" href="#">5000 Р.</a>
-            </div>
-          </div>
-          <div class="catalog-item">
-            <div class="catalog-item-top">
-              <i></i><i></i><i></i>
-            </div>
-            <img src="img/modern.jpg" alt="Modern" width="240" height="240">
-            <div class="hover-text">
-              <h2>Modern organic thai</h2>
-              <p>Сайт для ресторана быстрого питания</p>
-              <a class="btn-red-hover" href="#">11000 Р.</a>
-            </div>
-          </div>
-          <div class="catalog-item">
-            <div class="catalog-item-top">
-              <i></i><i></i><i></i>
-            </div>
-            <img src="img/avenue.jpg" alt="Avenue" width="240" height="240">
-            <div class="hover-text">
-              <h2>Avenue</h2>
-              <p>Макет для блога о путешествия</p>
-              <a class="btn-red-hover" href="#">8000 Р.</a>
-            </div>
-          </div>
-          <div class="catalog-item">
-            <div class="catalog-item-top">
-              <i></i><i></i><i></i>
-            </div>
-            <img src="img/dovetail.jpg" alt="Dovetail" width="240" height="240">
-            <div class="hover-text">
-              <h2>Dovetail</h2>
-              <p>Интернет-магазин с галереей товаров</p>
-              <a class="btn-red-hover" href="#">14000 Р.</a>
-            </div>
-          </div>
-        </div>
-        <div class="page">
-          <a href="#" class="page-link active-link">1</a>
-          <a href="#" class="page-link">2</a>
-          <a href="#" class="page-link">3</a>
-          <a href="#" class="page-link next">Следующая</a>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
 
 
